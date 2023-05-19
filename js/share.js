@@ -17,6 +17,8 @@ const init = () => {
 
     document.getElementById('copy').onclick = () => navigator.clipboard.writeText(message);
 
+    document.getElementById('line').href = `http://line.me/R/msg/text/?${encodeURIComponent(message)}`;
+
     console.log(memberList);
 }
 
